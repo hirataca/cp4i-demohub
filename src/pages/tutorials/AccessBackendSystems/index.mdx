@@ -10,9 +10,9 @@ In this tutorial, you use the Cloud Pak for Integration 2020.2.1 to create an Ap
 
 <AnchorLinks>
   <AnchorLink>Introduction</AnchorLink>
-  <AnchorLink>Prepare the environment</AnchorLink>
-  <AnchorLink>Configure IBM MQ</AnchorLink>
-  <AnchorLink>Working with App Connect Enterprise toolkit</AnchorLink>
+  <AnchorLink>Preparing the environment</AnchorLink>
+  <AnchorLink>Configuring IBM MQ</AnchorLink>
+  <AnchorLink>Working with App Connect Enterprise Toolkit</AnchorLink>
   <AnchorLink>Deploying a BAR file</AnchorLink>
   <AnchorLink>Using Operational Dashboard</AnchorLink>
   <AnchorLink>Summary</AnchorLink>
@@ -33,6 +33,8 @@ Implement enterprise grade messaging that is secure and reliable for any applica
 
 
 ## Preparing the environment
+
+### Task 1 - Preparing the environment
 
 As this is a new deployment of the Cloud Pak for Integration, you must execute some steps to prepare the environment. Initial setup steps are only needed for a fresh installation of the platform. They do not need to be repeated.
 You can use your workstation (MAC OSX) for working in this lab.
@@ -106,6 +108,8 @@ Tip: You might need to use the password. You can use the Clipboard to save the p
 
 
 ## Configuring IBM MQ
+
+### Task 2 - Configuring IBM MQ
 
 IBM Cloud Pak for Integration provides a single solution for all of your enterprise integration needs. The platform provides a comprehensive set of industry-leading capabilities. Combine powerful integration capabilities to create, manage, and monitor all of your integrations across applications, messaging, events, APIs, and more.
 
@@ -181,7 +185,10 @@ In this task, you create a local queue using MQ Console and check the MQ configu
 
 ![](images/ace-mq-get-mq-address.png)
 
-## Working with App Connect Enterprisa Toolkit (integration)
+## Working with App Connect Enterprise Toolkit
+
+### Task 3 - Working with App Connect Enterprisa Toolkit
+
 
 In this task, take an existing integration flow in ACE and modify it to send only the payload data to the NEWORDER queue.
 
@@ -258,6 +265,8 @@ App Connect Enterprise Toolkit saves and compile message flows, sub flows into a
 
 ## Deploying a BAR file
 
+### Task 4 - Deploying a BAR file
+
 In this task, deploy the integration flow as App Connect Enterprise containers running in Kubernetes on the Cloud Pak for Integration. You then test the integration API by calling the API to create a new order and confirm the response payload and data in the queue.
 
 1.In your browser, return to the IBM Cloud Pak for Integration.Under **Capabilities**, select the **App Connect Dashboard** line and click **db-demo** instance.
@@ -329,7 +338,10 @@ In this page, you can download a swagger file (you can import this file in API C
 
 ![](images/ace-mq-message-arrived.png)
 
-## Using Operations Dashboard (tracing)
+## Using Operational Dashboard
+
+
+### Task 5 - Using Operations Dashboard (tracing)
 
 
 Cloud Pak for Integration - Operations Dashboard Add-on is based on Jaeger open source project and the OpenTracing standard to monitor and troubleshoot microservices-based distributed systems. Operations Dashboard can distinguish call paths and latencies. DevOps personnel, developers, and performance specialists now have one tool to visualize throughput and latency across integration components that run on Cloud Pak for Integration. Cloud Pak for Integration - Operations Dashboard Add-on is designed to help organizations that need to meet and ensure maximum service availability and react quickly to any variations in their systems.
